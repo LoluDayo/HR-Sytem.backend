@@ -13,6 +13,8 @@ const app: Application = express();
 
 const PORT = process.env.PORT || 5000
 
+app.use(express.json());
+
 // if(process.env.NODE_ENV === 'production') {
 //     app.use(express.static(path.join(__dirname, "/frontend/dist")))
 
@@ -21,6 +23,7 @@ const PORT = process.env.PORT || 5000
 
 
 // console.log(__dirname); // Check if it's work
+
 
 app.use("/api", routes)
 

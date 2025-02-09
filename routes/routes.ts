@@ -1,9 +1,9 @@
-import express, {Router, Request, Response } from "express"
+import express, {Router, } from "express"
+import { createUser, loginUser } from "../controller/controller"
 
-const router: Router = Router()
+const router: Router = express.Router()
 
-router.get("/", (req: Request, res:Response) =>{
-    res.send("Server is ready")
-})
+router.post("/adduser", createUser)
+router.post("/login", loginUser)
 
 export default router

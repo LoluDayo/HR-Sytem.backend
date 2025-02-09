@@ -20,11 +20,14 @@
   },
   "homepage": "https://github.com/LoluDayo/HR-Sytem.backend#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-session": "^1.18.1",
     "mongoose": "^8.10.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.0",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^22.13.1",
